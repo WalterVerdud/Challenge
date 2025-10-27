@@ -23,4 +23,5 @@ public class loginTest extends BaseTest {
         Assert.assertTrue(loginPage.isErrorVisible(), "Debería mostrarse un mensaje de error en el login fallido");
     }
 
+
 }

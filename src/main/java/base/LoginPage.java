@@ -49,5 +49,6 @@ public class LoginPage extends BasePage {
     public String loginSuccessful() {
         return driver.findElement(siteLogo).getText();
     }
+
 }
 

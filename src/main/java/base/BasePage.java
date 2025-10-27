@@ -32,11 +32,4 @@ public class BasePage {
         return find(locator).isDisplayed();
     }
 
-    public String getCurrentUrl() {
-        return driver.getCurrentUrl();
-    }
-
-    public String getTitle() {
-        return driver.getTitle();
-    }
 }

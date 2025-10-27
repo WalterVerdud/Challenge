@@ -27,7 +27,7 @@ public class buyPage extends BasePage {
         super(driver);
     }
 
-    public void ShirtItem(){
+    public void ShirtItem() {
         logger.info("Agrega items al carrito de compra");
         click(shirtItem);
         click(lightItem);
@@ -43,18 +43,19 @@ public class buyPage extends BasePage {
         click(checkoutButtom);
     }
 
-    public void fillForm(){
+    public void fillForm() {
         logger.info("Completa el formulario");
         type("Walter", inputName);
-        type("Verdud",inputLastName);
-        type("5300",postalCode);
+        type("Verdud", inputLastName);
+        type("5300", postalCode);
         click(continueButtom);
         click(finishButtom);
         click(backHomeButtom);
     }
 
-    public boolean succesBuy(){
+    public boolean succesBuy() {
         logger.info("Compra Finalizada!");
         return isDisplayed(orderBuy);
     }
+
 }

@@ -41,7 +41,7 @@ public class AirportTest extends baseApi {
         Assert.assertFalse(response.jsonPath().getList("data").isEmpty(), "La lista de aeropuertos no debería estar vacía");
     }
 
-    @Test(description = "Calcula la distancia entre 2 aeropuertos",priority = 2)
+    @Test(description = "Calcula la distancia entre 2 aeropuertos", priority = 2)
     public void distanceBetweenAirports() throws IOException {
 
         String requestBody = readJsonFromFile();
